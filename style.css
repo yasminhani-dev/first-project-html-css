@@ -4,23 +4,23 @@ box-sizing: border-box;}
 
 @font-face {
     font-family:body-f-bold ;
-    src: url(../fonts/Roboto/static/Roboto-Bold.ttf);
+    src: url(fonts/Roboto/static/Roboto-Bold.ttf);
 }
 @font-face {
     font-family:body-f-reg;
-    src: url(../fonts/Roboto/static/Roboto-Regular.ttf);
+    src: url(fonts/Roboto/static/Roboto-Regular.ttf);
 }
 @font-face {
     font-family:body-f-semibold ;
-    src: url(../fonts/Roboto/static/Roboto-SemiBold.ttf);
+    src: url(fonts/Roboto/static/Roboto-SemiBold.ttf);
 }
 @font-face {
     font-family:heading-f-bold ;
-    src: url(../fonts/Epilogue/static/Epilogue-Bold.ttf);
+    src: url(fonts/Epilogue/static/Epilogue-Bold.ttf);
 }
 @font-face {
     font-family:heading-f-semibold ;
-    src: url(../fonts/Roboto/static/Roboto-SemiBold.ttf);
+    src: url(fonts/Roboto/static/Roboto-SemiBold.ttf);
 }
 
 :root{
@@ -322,7 +322,7 @@ margin-top: -7px;
 
 /* start header */
 header{
-    background:url(../images/images/bannerBG1_1.jpg) center/cover;
+    background:url(images/images/bannerBG1_1.jpg) center/cover;
     color: var(--white-color);
     overflow: hidden;
     padding: 170px 30px;
@@ -556,7 +556,7 @@ font-size: 18px;
     
 }
 .container-2 .card{
-     background: url(../images/images/offerBG1_1.jpg) center/cover ;
+     background: url(images/images/offerBG1_1.jpg) center/cover ;
 display: flex;
 justify-content: space-between;
 padding: 40px  0px 30px 15px;
@@ -767,7 +767,7 @@ font-size: 18px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background: url(../images/images/offerBG1_1.jpg) center/cover;
+background: url(images/images/offerBG1_1.jpg) center/cover;
 }
 
 .special-food>img{
@@ -1010,7 +1010,7 @@ overflow: hidden;
     width: 100%;
     
     background-color: var(--ternery-color);
-    background: url(../images/images/timerBg.png) center/cover;
+    background: url(images/images/timerBg.png) center/cover;
 padding: 100px 35px 0;
 display: grid;
 grid-template-columns: repeat(2,1fr);
