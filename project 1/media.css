@@ -1,0 +1,423 @@
+
+.mobile-menu{
+    display: none;
+}
+
+nav input{
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    
+.overlay-mobile-menu{
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ;
+    display: block;
+    position: fixed;
+    width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.397);
+top: 0;
+left: 0;
+ z-index: 3;}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+.mobile-menu{
+    overflow-y:scroll;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 25px;
+    width: 370px;
+    height: 100vh;
+    right:-370px;
+    transition: .5s .3s;
+    bottom: 0;
+    border-left: 2px solid var(--main-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
+   
+}
+
+.circle{
+     width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+   
+border-radius: 50%;
+font-size: 14px;
+border: 2px solid var(--main-color);
+transition: .3s;
+}
+
+
+
+.mobile-menu .top-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.mobile-menu .top-menu .close{
+     background-color: var(--main-color);
+}
+.mobile-menu .top-menu .close:hover{
+    background-color: red;
+    transform: rotate(45deg);
+box-shadow: 0 0 2px 3px red;
+cursor: pointer;
+}
+
+
+.mobile-menu .menu-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu .link a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: var(--heading-f-semibold);
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0;
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.mobile-menu .link div a{
+     padding-left:30px;
+}
+
+.mobile-menu .link a i{
+    cursor: pointer;
+    font-size: 14px;
+    transition: .5s;
+}
+
+
+.mobile-menu .menu-contact{
+ display: flex;
+    flex-direction: column;
+gap: 20px;
+}
+
+
+.mobile-menu .menu-contact b{
+    font-size: 20px;
+    font-family: var(--heading-f-bold);
+}
+.mobile-menu .menu-contact .container{
+    display: flex;
+    flex-direction: column;
+gap: 17px;
+}
+.mobile-menu .menu-contact .container div{
+display: flex;
+align-items: center;
+gap: 15px;
+
+}
+.mobile-menu .menu-contact .container div i{
+color: var(--main-color);
+
+}
+.mobile-menu .menu-contact .container div p{
+    opacity: .7;
+    font-family: var(--body-f-reg);
+
+}
+
+.mobile-menu .menu-contact .btn button{
+    width: 100%;
+    justify-content: center;
+    padding: 18px;
+   
+}
+.mobile-menu .menu-contact .btn button i{
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+.mobile-menu .menu-contact .social{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.mobile-menu .menu-contact .social i{
+    width: 45px;
+    height: 45px;
+    color: gray;
+    border-color: gray;
+   transition: .4s;
+}
+.mobile-menu .menu-contact .social i:hover{
+background-color: var(--main-color);
+color: var(--white-color);
+border-color: var(--main-color);
+
+}
+.mobile-dropdown{
+    display: none;
+
+}
+
+.mobile-menu .menu-links .link input:checked~ .mobile-dropdown{
+    display: block;
+}
+.mobile-menu .menu-links .link input{
+    display: none;
+}
+nav input:checked ~ .overlay-mobile-menu{
+    opacity: 1;
+    visibility: visible;
+}
+nav input:checked ~ .overlay-mobile-menu .mobile-menu{
+    right: 0;
+}
+
+
+
+
+
+
+nav{
+    background-color: var(--white-color);
+    height: 115px;
+}
+.down-nav ul,
+.top-nav{
+    display: none !important;
+}
+
+.logo{height: 100%;}
+.logo,
+.down-nav{
+    background-color: transparent;}
+.navbar,
+.down-nav{
+    width: 100% !important;
+    display: flex !important;
+   
+    align-items: center !important;
+    height: 100% !important;
+}
+
+
+.process{margin-left: auto;
+gap: 10px;}
+
+.process,
+.navbar>div{color: var(--black-color);
+padding: 0;
+padding-right: 10px;}
+
+
+
+/* header */
+
+header .heroimg{
+    display: none;
+}
+header >img{
+    display: none;
+}
+
+/* end header */
+
+/* start popular */
+.container-1{
+    display: grid;
+    grid-template-columns:repeat(2 ,1fr) ;
+    gap: 140px;
+}
+
+
+.container-2{
+    
+    display: grid;
+
+    grid-template-columns: repeat(1 ,1fr);
+    
+}
+
+/* end popular */
+
+
+/* start about */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 140px;
+
+}
+
+.about .aside-sec{
+    display: none;
+}
+
+/* end about */
+
+/* start best-selling */
+.best-selling > img{
+    display: none;
+}
+
+.best-selling .container{
+    display: grid;
+    grid-template-columns:1fr 1fr; 
+    gap: 39px;
+}
+.best-selling .container .card{
+     padding: 39px 55px 29px 45px;
+}
+
+/* end best-selling */
+
+/* start pizza */
+.special-food{
+    padding: 50px 40px;
+}
+.special-food{
+      display: flex;
+      flex-direction: column;
+    gap: 10px;
+    padding: 70px;
+}
+
+.special-food .details b{
+    font-size: 20px;
+}
+
+
+
+.special-food >img{
+    display: none;
+}
+
+/* end pizza */
+
+/* start menue */
+
+.food-menu .container ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr)!important;
+}
+
+
+.food-menu .container-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 19px;
+    padding: 10px 32px;
+    
+}
+
+
+.tags h2{
+    font-size: 42px;
+}
+/* end menue */
+
+/* start  .special */
+.discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+ padding: 70px 50px 60px 10px;
+}
+.discount .card-img{
+    width: 499px;
+}
+
+/* end  .special */
+
+/* start chef */
+.chef .container{
+ display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+}
+.chef .container .card{
+    padding:0px 75px 40px 79px;
+}
+/* end chef */
+
+
+.client .content-box{
+width: 65%;
+}
+
+
+
+
+/* start latest*/
+
+.latest .container{
+display: grid;
+gap: 25px;
+grid-template-columns: repeat(2,1fr);
+}
+
+/* end latest */
+
+/* start footer*/
+footer .container .top-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+     padding: 4px 30px 44px 50px;
+}
+
+footer .container .body-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+/* end footer*/
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width :700px) {
+
+}
+
+
+
+
+
+
+@media (max-width :500px) {
+
+}
+
+
